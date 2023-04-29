@@ -80,7 +80,7 @@ contributions[msg.sender] += msg.value;
 
 1- Enviamos 0.0009 ETH que es menos de 0.001 ETH que es el maximo para realizar una contribucion.
 ```js
--> await contract.contribute.sendTransaction({ from: nuestrawallet, value: toWei('0.0009')})
+-> await contract.contribute.sendTransaction({ from: player, value: toWei('0.0009')})
 <- {tx: '0xtx', receipt:...}
 ```
 2- Comprobamos que hemos hecho una contribucion
@@ -93,7 +93,7 @@ Ya tenemos el requisito de tener contribuciones mayor a 0 para que la funcion fa
 Para que se ejecute receive tenemos que enviar algo de ETH al contrato
 
 ```js
--> await sendTransaction({from: nuestrawallet, to: contract.address, value: toWei('0.0000001')})
+-> await sendTransaction({from: player, to: contract.address, value: toWei('0.0000001')})
 <- '0xtx...'
 ```
 
