@@ -1,4 +1,10 @@
 # Variable almacenada en memoria
+Es esencial tener precaución al desplegar contratos en la cadena de bloques.
+
+En el reto del Vault, se debe encontrar la contraseña para desbloquear el contrato inteligente.
+
+Para lograrlo, es necesario hacer ingeniería inversa del bytecode del contrato y localizar la ubicación en memoria donde se guarda la contraseña.
+
 ```solidity
 contract Vault {
   bool public locked;
