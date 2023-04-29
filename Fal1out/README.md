@@ -1,4 +1,8 @@
 # El desarrollador que cometió un error ortografico
+El error del desarrollador consistió en no haber verificado correctamente el código del contrato, lo que resultó en la creación de una función de constructor mal escrita.
+
+Debido a este error, se generó una función altamente privilegiada y accesible para todos los usuarios del contrato, lo que comprometió la seguridad del mismo.
+
 ## Caso Rubixi
 Este fue un error real, donde el contrato se llama Rubixi y el "constructor" DynamicPyramid()
 
