@@ -1,7 +1,7 @@
 # La importancia de una función fallback segura
 Este contrato cuenta con un mecanismo de contribuciones y una función fallback que se ejecuta cuando el contrato recibe fondos sin haber pasado por una función del propio contrato.
 
-El constructor establece una contribución de 1000 ETH para el propietario, y para clasificar como contribución, se debe enviar una cantidad mínima de 0.001 ETH.
+El constructor establece una contribución de 1000 ETH para el propietario, y para clasificar como contribución, se debe enviar una cantidad menor de 0.001 ETH.
 El jugador debe aprovechar esta función fallback para transferir ETH desde el contrato a su cuenta.
 
 El objetivo del jugador es aprovechar esta función fallback para transferir ETH desde el contrato a su cuenta.
